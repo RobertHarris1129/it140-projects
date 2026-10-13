@@ -1,25 +1,30 @@
 # Project One Move-Between-Rooms Pseudocode
-#
-# Graded checkpoint: Module Five Project One
-# Later use: conceptual support for M6; movement design for M7
-#
-# Review the course-provided movement flowchart before completing this file.
-# Write pseudocode, not Python code. Use clear indentation and course-appropriate
-# keywords such as INPUT, OUTPUT, IF, ELSE, WHILE, SET, or similar terms.
 
-# TODO 1: Identify the information the movement process needs.
-# Consider the player's current room and movement command.
+# Haunted Mansion Adventure
 
-# TODO 2: Prompt for and receive the player's movement command.
+# Set the player's starting room.
+SET currentRoom = "Entrance Hall"
 
-# TODO 3: Validate whether the requested movement is possible from the
-# current room. Show the decision clearly.
+# Begin the movement loop.
+WHILE currentRoom is not "QUIT" AND currentRoom is not "GAME OVER"
 
-# TODO 4: Describe what happens when the movement command is valid.
-# Include the room update and player output.
+    OUTPUT currentRoom
+    OUTPUT "Enter a direction to move: North, South, East, West, or Quit."
+    INPUT movementCommand
 
-# TODO 5: Describe what happens when the movement command is invalid.
-# Include the output the player should receive.
+    IF movementCommand = "Quit"
+        SET currentRoom = "QUIT"
+        OUTPUT "Thanks for playing Haunted Mansion Adventure!"
 
-# TODO 6: Show how movement fits into repeated gameplay.
-# The final game continues accepting commands until a required ending occurs.
+    ELSE IF movementCommand is a valid direction from currentRoom
+        SET currentRoom = the room connected in that direction
+        OUTPUT "You moved to " + currentRoom
+
+    ELSE
+        OUTPUT "You cannot go that way. Please choose a valid direction."
+    END IF
+
+END WHILE
+
+# End the game.
+OUTPUT "Game over."

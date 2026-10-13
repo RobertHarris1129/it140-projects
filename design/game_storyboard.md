@@ -7,25 +7,25 @@
 
 **Theme:**
 
-TODO: Name and briefly describe your game's theme.
+TODO: Haunted Mansion Adventure. 
 
 **Storyline:**
 
-TODO: In one short paragraph, explain the setting, the player's goal, the items
-the player must gather, and the threat created by the villain.
+TODO: The player enters an abandoned haunted mansion to recover six mysterious items hidden throughout the house. Legend says that a powerful ghost haunts the mansion and protects its secrets. The player must explore the rooms, collect all six items, and avoid entering the ghost's room until everything has been collected. If the player collects all six items before encountering the ghost, they win the game. If they enter the ghost's room too early, the ghost catches them and the game ends.
 
 ## Rooms
 
 Project One requires a minimum of eight rooms.
 
-1. TODO: Start room
-2. TODO: Room
-3. TODO: Room
-4. TODO: Room
-5. TODO: Room
-6. TODO: Room
-7. TODO: Room
-8. TODO: Villain room
+1. Entrance Hall
+2. Living Room
+3. Kitchen
+4. Dining Room
+5. Library
+6. Bedroom
+7. Basement
+8. Attic
+9. Ghost's Chamber
 
 Add more rooms if your design needs them.
 
@@ -34,31 +34,31 @@ Add more rooms if your design needs them.
 With the minimum eight-room design, Project One requires at least six items.
 Every room except the start room and villain room must contain one item.
 
-1. TODO: Item
-2. TODO: Item
-3. TODO: Item
-4. TODO: Item
-5. TODO: Item
-6. TODO: Item
+1. Rusty Key
+2. Candle
+3. Ancient Book
+4. Silver Cross
+5. Potion
+6. Golden Locket
 
 If you add rooms beyond the minimum, add an item for every additional room
 except the start room and villain room.
 
 ## Villain
 
-TODO: Identify and briefly describe the villain.
+The villain is a terrifying ghost that haunts the Ghost's Chamber. The player must collect all six items before entering this room.
 
 ## Storyboard and Map Check
 
 Before submitting, compare this storyboard with `game_map.drawio`.
 
-* [ ] I included eight (8) rooms.
-* [ ] I included six (6) collectable items.
-* [ ] The start room has no item.
-* [ ] The villain room has no item.
-* [ ] Every room except the start room and villain room contains one item.
-* [ ] Room, item, and villain names match my map.
-* [ ] The map allows the player to collect all required items before the
+* [x] I included eight (8) rooms.
+* [x] I included six (6) collectable items.
+* [x] The start room has no item.
+* [x] The villain room has no item.
+* [x] Every room except the start room and villain room contains one item.
+* [x] Room, item, and villain names match my map.
+* [x] The map allows the player to collect all required items before the
   villain is encountered.
 
 ## Project Two Handoff

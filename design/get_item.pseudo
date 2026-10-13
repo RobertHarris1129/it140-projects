@@ -1,33 +1,36 @@
 # Project One Get-Item Pseudocode
-#
-# Graded checkpoint: Module Five Project One
-# Later use: get-item and inventory design for M7 Project Two
-#
-# Review the course-provided get-item flowchart before completing this file.
-# Write pseudocode, not Python code. Use clear indentation and course-appropriate
-# keywords such as INPUT, OUTPUT, IF, ELSE, SET, ADD, or similar terms.
+
+# Haunted Mansion Adventure
 
 START get_item
 
-    # TODO 1: Identify the information the get-item process needs.
-    # Consider the current room, item in that room, and player's inventory.
+    # Identify the current room, its item, and inventory.
+    SET currentRoom = player's current room
+    SET roomItem = item available in currentRoom
 
-    # TODO 2: Prompt for and receive the player's get-item command.
+    # Ask the player which item they want to collect.
+    OUTPUT "Enter the name of the item you want to collect:"
+    INPUT requestedItem
 
-    # TODO 3: Validate whether the requested item is available in the current
-    # room. Show the decision clearly.
+    # Check whether the requested item is available.
+    IF roomItem exists AND requestedItem = roomItem
 
-    # TODO 4: Describe what happens when the item request is valid.
-    # Include the inventory update and player output.
+        # Add the item to inventory.
+        ADD roomItem TO inventory
+        SET roomItem = none
 
-    # TODO 5: Describe what happens when the item request is invalid.
-    # Include the output the player should receive.
+        OUTPUT "You collected " + requestedItem + "!"
+        OUTPUT "The item has been added to your inventory."
 
-    # TODO 6: Show how the process returns to or continues the larger gameplay
-    # loop after the command is handled.
+    ELSE
+
+        # The item is not available in this room.
+        OUTPUT "That item is not available in this room."
+        OUTPUT "Move to another room or try a different item."
+
+    END IF
+
+    # Return to the main gameplay loop.
+    OUTPUT "Returning to Haunted Mansion Adventure."
 
 END get_item
-
-
-# References
-
